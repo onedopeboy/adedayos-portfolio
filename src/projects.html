@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects | Adedayo Oriaifo</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand" id="nav-logo">
+      <span class="brand-mark">AO</span>
+      <span>
+        <span class="brand-text-name">Adedayo Oriaifo</span>
+        <span class="brand-text-sub">Portfolio</span>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Me</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="planner.html" class="nav-link">Academic Planner</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="mobile-menu-toggle" class="icon-btn mobile-menu-toggle" aria-label="Open menu" aria-expanded="false"></button>
+    </div>
+  </div>
+
+  <nav id="mobile-nav" class="mobile-nav" hidden aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav-link"><span data-icon="user"></span>Home</a>
+    <a href="about.html" class="mobile-nav-link"><span data-icon="gradCap"></span>About Me</a>
+    <a href="projects.html" class="mobile-nav-link active"><span data-icon="folder"></span>Projects</a>
+    <a href="planner.html" class="mobile-nav-link"><span data-icon="calendarDays"></span>Academic Planner</a>
+    <a href="contact.html" class="mobile-nav-link"><span data-icon="mail"></span>Contact</a>
+  </nav>
+</header>
+
+<main id="main-content">
+  <div class="container">
+    <section id="projects-section" class="page-section stack gap-4">
+
+      <div class="page-header">
+        <h2>Sample Projects</h2>
+        <p class="section-lead">A showcase of application-driven solutions that bridge software development, clean design logic, and state management. Each project includes simulated deployments and complete source repositories.</p>
+      </div>
+
+      <div class="grid grid-3" id="projects-grid">
+        <!-- Project cards injected by script.js -->
+      </div>
+
+      <div class="callout-box">
+        <div>
+          <span class="eyebrow" style="background:none;border:none;padding:0;"><span data-icon="sparkles"></span> Live Repository Tracking</span>
+          <h4>Curious about the COS 106 application codebases?</h4>
+          <p>All three systems represent responsive architectures with extensive HTML compliance. Click on a project repository link to explore standard source code structures.</p>
+        </div>
+        <a href="https://github.com/aria-thorne" target="_blank" rel="noreferrer" class="btn btn-outline-accent">View GitHub Hub</a>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<!-- Lightbox -->
+<div id="project-lightbox" class="lightbox" hidden>
+  <div class="lightbox-inner">
+    <div class="lightbox-img-wrap">
+      <img id="lightbox-img" src="" alt="" />
+      <button id="lightbox-close" class="lightbox-close" title="Close" data-icon="close"></button>
+    </div>
+    <div class="lightbox-caption">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-desc"></p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-mark">AO</span>
+        <div>
+          <span class="brand-text-name">Adedayo Oriaifo</span>
+          <p>B.Sc. Computer Science Student building accessible, user-centric web experiences at MIVA Open University.</p>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/aria-thorne" target="_blank" rel="noreferrer" class="icon-btn" title="GitHub Profile" data-icon="github"></a>
+        <a href="contact.html" class="icon-btn" title="Contact Me" data-icon="mail"></a>
+        <button id="back-to-top-btn" class="icon-btn" title="Back to Top" data-icon="arrowUp"></button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Course: COS 106 • Practical Term Project (20 Marks)</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Academic Planner</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('projects-grid');
+    const lightbox = document.getElementById('project-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDesc = document.getElementById('lightbox-desc');
+
+    function openLightbox(project) {
+      lightboxImg.src = project.image;
+      lightboxImg.alt = project.title;
+      lightboxTitle.textContent = project.title;
+      lightboxDesc.textContent = project.description;
+      lightbox.hidden = false;
+    }
+    function closeLightbox() { lightbox.hidden = true; }
+
+    PROJECTS.forEach((project) => {
+      const article = document.createElement('article');
+      article.className = 'custom-card project-card';
+      article.innerHTML = `
+        <div class="project-thumb">
+          <img src="${project.image}" alt="${project.title}" />
+          <button class="zoom-btn" title="Zoom Screenshot" data-icon="zoomIn"></button>
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>${project.title}</h3>
+            <p class="desc">${project.description}</p>
+            <div class="tag-row">${project.tags.map(t => `<span class="tag-chip">${t}</span>`).join('')}</div>
+          </div>
+          <div class="project-actions">
+            <a href="${project.demoUrl}" target="_blank" rel="noreferrer" class="btn btn-primary"><span data-icon="externalLink"></span> Demo Link</a>
+            <a href="${project.githubUrl}" target="_blank" rel="noreferrer" class="btn btn-outline"><span data-icon="github"></span> Repository</a>
+          </div>
+        </div>
+      `;
+      article.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = icon(el.getAttribute('data-icon')));
+      article.querySelector('.zoom-btn').addEventListener('click', () => openLightbox(project));
+      grid.appendChild(article);
+    });
+
+    document.getElementById('lightbox-close').innerHTML = icon('close');
+    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+  });
+</script>
+</body>
+</html>
