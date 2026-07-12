@@ -83,8 +83,8 @@ const INITIAL_COURSES = [
   { code: 'COS 101', title: 'Introduction to Computer Science', credits: 3, grade: 'A', semester: 'Semester 1' },
   { code: 'STA 111', title: 'Descriptive Statistics', credits: 3, grade: 'A', semester: 'Semester 1' },
   { code: 'PHY 101', title: 'General Physics I', credits: 2, grade: 'B', semester: 'Semester 1' },
-  { code: 'MTH 101', title: 'Elementary Mathematics', credits: 2, grade: 'A', semester: 'Semester 2' },
-  { code: 'GST 127', title: 'Environmental Sustainability', credits: 2, grade: 'A', semester: 'Semester 2' },
+  { code: 'MTH 101', title: 'Elementary Mathematics', credits: 2, grade: 'A', semester: 'Semester 1' },
+  { code: 'GST 127', title: 'Environmental Sustainability', credits: 2, grade: 'A', semester: 'Semester 1' },
   { code: 'GST 111', title: 'Communication in English I', credits: 2, grade: 'A', semester: 'Semester 1' },
   { code: 'GST 121', title: 'Use of Library Study Skills and ICT', credits: 2, grade: 'A', semester: 'Semester 1' },
   { code: 'PHY 107', title: 'General Practical Physics', credits: 1, grade: 'A', semester: 'Semester 2' }
