@@ -87,7 +87,7 @@ const INITIAL_COURSES = [
   { code: 'GST 127', title: 'Environmental Sustainability', credits: 2, grade: 'A', semester: 'Semester 1' },
   { code: 'GST 111', title: 'Communication in English I', credits: 2, grade: 'A', semester: 'Semester 1' },
   { code: 'GST 121', title: 'Use of Library Study Skills and ICT', credits: 2, grade: 'A', semester: 'Semester 1' },
-  { code: 'PHY 107', title: 'General Practical Physics', credits: 1, grade: 'A', semester: 'Semester 2' }
+  { code: 'PHY 107', title: 'General Practical Physics', credits: 1, grade: 'A', semester: 'Semester 1' }
 ];
 
 const INITIAL_TASKS = [
