@@ -7,6 +7,8 @@
 ===================================================================== */
 
 /* ---------------------- Inline SVG Icon Library ---------------------- */
+/* I am using inline SVGs for icons to avoid external dependencies and to allow for easy CSS styling. Each icon is defined as a string of SVG markup, and the `icon` function wraps it in a span with a class for styling. */
+
 const ICONS = {
   menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>',
   close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>',
@@ -43,7 +45,9 @@ const ICONS = {
   volumeX: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4Z"/><path d="m17 9 6 6M23 9l-6 6"/></svg>',
   send: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2 15 22l-4-9-9-4Z"/></svg>',
   cpu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1"/><rect x="10" y="10" width="4" height="4"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>',
+  wrench: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a3.5 3.5 0 1 0-4.95 4.95L4 17v3h3l5.55-5.55a3.5 3.5 0 0 0 4.95-4.95l-2.5 2.5-2-2 2.5-2.5Z"/></svg>',
 };
+
 function icon(name, cls) { return `<span class="i ${cls || ''}">${ICONS[name] || ''}</span>`; }
 
 /* ---------------------- Portfolio Data ---------------------- */
@@ -92,6 +96,8 @@ const INITIAL_TASKS = [
   { id: '3', title: 'Submit GST 101 English Essay Assignment', course: 'GST 101 - English Communication', dueDate: '2026-07-01', priority: 'low', completed: false },
   { id: '4', title: 'Prepare for COS 102 Semester Review Session', course: 'COS 102 - Logic Design', dueDate: '2026-07-03', priority: 'high', completed: false }
 ];
+
+/* None of the project data below is real. These are mock projects for the purpose of this academic portfolio showcase. */
 
 const PROJECTS = [
   {

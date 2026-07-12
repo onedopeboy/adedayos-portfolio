@@ -196,14 +196,6 @@ body {
   background: var(--accent-pri);
 }
 
-.nav-separator {
-  display: none;
-  width: 1px; height: 24px;
-  background: var(--color-border);
-  margin: 0 16px;
-}
-@media (min-width: 768px) { .nav-separator { display: block; } }
-
 .header-actions {
   display: flex;
   align-items: center;
@@ -581,10 +573,10 @@ textarea.custom-input { resize: vertical; min-height: 120px; }
 .card-footnote svg { width: 16px; height: 16px; }
 
 .section-heading-row {
+  padding-top: 50px;
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 8px;
 }
 .section-heading-row svg { width: 24px; height: 24px; color: var(--accent-pri); }
 .section-heading-row h3 { font-size: 1.5rem; }

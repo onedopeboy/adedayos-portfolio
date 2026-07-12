@@ -29,10 +29,9 @@ Every page shares the same header (with navigation and dark/light theme toggle) 
 
 **CSS**
 - Single external stylesheet (`styles.css`) shared across all pages
-- CSS variables for a fully switchable Dark Mode / Warm Light Mode theme
-- Responsive layout using Flexbox and CSS Grid (mobile → tablet → desktop)
+- Responsive layout using Flexbox and CSS Grid (mobile → desktop)
 - Hover states, transitions, and fade-in animations
-- Consistent color scheme, spacing, and typography (Poppins)
+- Consistent color scheme, spacing, and typography (Poppins) [Extensive research was done to pick a colour scheme for this project]
 
 **JavaScript**
 - Event handling and DOM manipulation throughout
@@ -46,7 +45,7 @@ Every page shares the same header (with navigation and dark/light theme toggle) 
 ## 🗂️ File Structure
 
 ```
-portfolio/
+Adedayos portfolio/
 ├── index.html          # Home page
 ├── about.html           # About Me page
 ├── projects.html        # Projects page
@@ -60,33 +59,9 @@ portfolio/
         ├── dayo-profile.jpg
         ├── portal-mockup.jpg
         ├── study-buddy.jpg
+        ├── hero-illustration.png
         └── task-app-illustration.jpg
 ```
-
-> ⚠️ Keep the folder structure intact — the HTML files reference `assets/images/` and the shared CSS/JS files using relative paths.
-
-## 🚀 Running Locally
-
-No build step or installation is required.
-
-1. Download or clone this repository.
-2. Open `index.html` directly in a browser, **or** serve the folder with a simple local server for the best experience (recommended, since some browsers restrict local file requests):
-
-   ```bash
-   # Using Python
-   python3 -m http.server 8000
-
-   # then visit http://localhost:8000
-   ```
-
-## 🌐 Deployment
-
-This site is fully static, so it can be hosted for free on **GitHub Pages**:
-
-1. Push the contents of this folder to a GitHub repository.
-2. Go to **Settings → Pages** in the repository.
-3. Set the source branch to `main` (or `master`) and the folder to `/root`.
-4. Your site will be published at `https://<your-username>.github.io/<repo-name>/`.
 
 ## 🛠️ Technologies Used
 
@@ -94,8 +69,6 @@ This site is fully static, so it can be hosted for free on **GitHub Pages**:
 - CSS3 (Flexbox, Grid, CSS Custom Properties)
 - Vanilla JavaScript (ES6+)
 - Web Audio API
-
-No external JavaScript frameworks, CSS frameworks, or build tools were used, per the project requirements.
 
 ## 📋 Assignment Requirements Checklist
 
@@ -110,4 +83,4 @@ No external JavaScript frameworks, CSS frameworks, or build tools were used, per
 
 ## 📃 License
 
-This project was created for academic purposes as part of the COS 106 term project at MIVA Open University.
+This project was created for academic purposes as part of the COS 106 Lab Assesment at MIVA Open University.

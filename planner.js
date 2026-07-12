@@ -351,3 +351,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('beforeunload', stopSounds);
   });
 })();
+/// === Omo mehn, this thing nearly take my life, I was about to go insane trying to figure out how to make a simple synth with the Web Audio API. The amount youtube videos I watched ehn... 😭 === ///
