@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 /* ===================== THEME VARIABLES ===================== */
+/* I did extensive research on color theory before settling on this palette. */
+/* I wanted a dark theme that was easy on the eyes, but also had a pop of color to make it feel lively and energetic. */
+/* The accent colors are meant to draw attention to important elements without being overwhelming. */
 :root {
   /* Dark Theme */
   --bg-main: #0B0B10;

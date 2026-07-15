@@ -6,8 +6,8 @@
 **Project:** Build a fully functional, responsive, multi-page academic portfolio and student management website using **HTML, CSS and Javascript**
 
 
-- **Live site:** _add your hosted link here_
-- **GitHub repository:** _add your repo link here_
+- **Live site:** https://onedopeboy.github.io/adedayos-portfolio/
+- **GitHub repository:** https://github.com/onedopeboy/adedayos-portfolio
 
 ## 📄 Pages
 
@@ -19,7 +19,7 @@
 | Academic Planner | `planner.html` | Interactive task manager (add / complete / delete / filter) plus an ambient focus sound player |
 | Contact | `contact.html` | Validated contact form (name, email, phone, message) |
 
-Every page shares the same header (with navigation and dark/light theme toggle) and footer for a consistent experience.
+Every page shares the same header and footer for a consistent experience.
 
 ## ✨ Features
 
@@ -38,7 +38,6 @@ Every page shares the same header (with navigation and dark/light theme toggle) 
 - Interactive Academic Planner: add, complete, delete, and filter tasks — persisted with `localStorage`
 - Contact form validation: rejects empty fields, validates email format, enforces digits-only phone numbers
 - Project gallery lightbox (zoom-to-view screenshots)
-- Dark/light theme toggle with saved preference
 - Mobile navigation drawer
 - An "Ambient Focus Synth" sound player built entirely with the **Web Audio API** (binaural beats, brown-noise rain, and a deep drone — synthesized live in the browser, no audio files needed)
 
@@ -52,7 +51,7 @@ Adedayos portfolio/
 ├── planner.html          # Academic Planner page
 ├── contact.html          # Contact page
 ├── styles.css            # Shared stylesheet (theme, layout, components)
-├── script.js             # Shared JS: icons, data, theme toggle, navigation
+├── script.js             # Shared JS: icons, data, navigation
 ├── planner.js             # Academic Planner logic + sound synth
 └── assets/
     └── images/
