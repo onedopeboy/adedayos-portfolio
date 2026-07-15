@@ -848,6 +848,7 @@ textarea.custom-input { resize: vertical; min-height: 120px; }
   border-radius: 12px;
   padding: 4px;
   height: 30px;
+  min-width: 0;
 }
 .task-filter svg { width: 14px; height: 14px; color: var(--accent-pri); margin-left: 10px; flex-shrink: 0; }
 .task-filter select {
@@ -861,6 +862,7 @@ textarea.custom-input { resize: vertical; min-height: 120px; }
   line-height: 1;
   cursor: pointer;
   padding-right: 10px;
+  min-width: 0;
 }
 
 .task-list { display: flex; flex-direction: column; gap: 12px; }
