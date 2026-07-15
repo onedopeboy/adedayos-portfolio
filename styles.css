@@ -821,6 +821,7 @@ textarea.custom-input { resize: vertical; min-height: 120px; }
   gap: 32px;
   min-width: 0;
 }
+.planner-forms > * { min-width: 0; }
 @media (min-width: 1024px) { .planner-forms { grid-template-columns: 5fr 7fr; } }
 
 .task-form { display: flex; flex-direction: column; gap: 16px; }
